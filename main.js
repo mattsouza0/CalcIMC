@@ -1,9 +1,9 @@
 let botaoCalcular = document.getElementById("bntCalcular");
 
 function calculandoIMC() {
-  let peso = document.getElementById("peso").value;
-  let altura = document.getElementById("altura").value / 100;
-  let resultado = document.getElementById("resultado");
+  let peso = document.getElementById('peso').value;
+  let altura = document.getElementById('altura').value / 100;
+  let resultado = document.getElementById('resultado');
 
   if (altura !== "" && peso !== "") {
     let imc = (peso / (altura * altura)).toFixed(1);
