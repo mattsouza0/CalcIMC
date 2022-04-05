@@ -27,5 +27,5 @@ function calculandoIMC() {
     resultado.textContent = "Preencha todos os campos!!!";
   }
 }
-
+l
 botaoCalcular.addEventListener("click", calculandoIMC);
