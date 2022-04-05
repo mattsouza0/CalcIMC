@@ -9,26 +9,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main>
+      <div class="container">
+        <h1>Calcule seu IMC</h1>
+        <form>
+          <p><b>Digite seu peso</b></p>
+          <div>
+            <input id="peso" type="number" />
+            <span><strong>Kg</strong></span>
+            <span>Ex: 60.9</span>
+          </div>
+          <div>
+            <p><b>Digite sua altura</b></p>
+            <input id="altura" type="number" />
+            <span><strong>Cm</strong></span>
+            <span> Ex: 157</span>
+          </div>
+          <div>         
+            <button id="bntCalcular" class="botao-calcular" type="button" value="Calcular">Calcular</button>
+          </div>
+        </form>
+        <div class="result" id="resultado">                
+              <font size="2">
+                <p>Menor que 18,5    -> Magreza</p>
+                <p>Entre 18,5 e 24,9 ->	Normal</p>
+                <p>Entre 25,0 e 29,9 ->	Sobrepeso 	I</p>
+                <p>Entre 30,0 e 39,9 ->	Obesidade 	II</p>
+                <p>Maior que 40,0 	 -> Obesidade Grave 	III</p>
+              </font>
+        </div>
+      </div>
+  </main>
+  <div>
     <script src="main.js"></script>
-    <div class="container">
-      <h1>Calcule seu IMC</h1>
-      <form>
-        <p><b>Digite seu peso</b></p>
-        <div>
-          <input id="peso" type="number" />
-          <span>Kg</span>
-        </div>
-        <div>
-          <p><b>Digite sua altura</b></p>
-          <input id="altura" type="number" />
-          <span>Cm</span>
-        </div>
-        <div>
-          <input id="bntCalcular" class="botao-calcular" type="button" value="Calcular" />
-        </div>
-      </form>
-      <div id="resultado"></div>
-    </div> 
-  </body>
-  
-  </html>
+  </div>
+</body>
+</html>
